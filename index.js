@@ -2,7 +2,6 @@ var list = document.querySelectorAll("button");
 
 for (var i = 0; i < list.length; i++) {
     list[i].addEventListener("click", function () {
-        this.style.color = 'white';
         var buttonInnerHTML = this.innerHTML;
         makeSound(buttonInnerHTML);
         buttonAnimation(buttonInnerHTML);
